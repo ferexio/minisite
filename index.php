@@ -34,10 +34,10 @@ while($row = $dbs->fetchArray(SQLITE3_ASSOC)){
         $newid = $newid - 1;
    }
 }
-
+echo '<br /><ul class="pagination justify-content-center">';
 for ($i=1; $i <= ($ic2['count']/$app); $i++)
 {
-echo '<a href="index.php?page='.$i.'"><b>&nbsp'.$i.'&nbsp</b></a>';
+echo '<li class="page-item"><a class="page-link" href="index.php?page='.$i.'"><b>&nbsp'.$i.'&nbsp</b></a></li></ul>';
 }
 else
 {
