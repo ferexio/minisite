@@ -19,13 +19,13 @@ if($page == 1)$newid=$ic2['count'];
 else if($page > 1)$newid=$ic2['count'] -  $page;
 
 while($row = $dbs->fetchArray(SQLITE3_ASSOC)){
-        $tfr = $row['tekst'];
+        $tfr = $row['news'];
         $stags = strip_tags($tfr, $tags);
             echo'
                         <div class="card notka">
             <div class="card-block">
-            <h4 class="card-title"><a href="index.php?id='.$newid.'" style="text-decoration: none;">'.$row['tytul'].'</a></h4>
-            <h6 class="card-subtitle mb-2 text-muted">'.$row['data'].'</h6>
+            <h4 class="card-title"><a href="index.php?id='.$newid.'" style="text-decoration: none;">'.$row['title'].'</a></h4>
+            <h6 class="card-subtitle mb-2 text-muted">'.$row['date'].'</h6>
             <p class="card-text">'.$stags.'</p>
             <a href="#" class="card-link">First link</a>
             <a href="#" class="card-link">Second link</a></div></div>
