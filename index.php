@@ -39,6 +39,7 @@ for ($i=1; $i <= ($ic2['count']/$app +1); $i++)
 {
 echo '<li class="page-item"><a class="page-link" href="index.php?page='.$i.'"><b>&nbsp'.$i.'&nbsp</b></a></li></ul>';
 }
+}
 else
 {
 if (is_numeric($_GET["id"]))
